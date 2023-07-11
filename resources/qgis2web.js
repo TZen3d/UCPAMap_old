@@ -45,7 +45,7 @@ var map = new ol.Map({
     .getElementsByTagName('button')[0].className +=
     ' fa fa-binoculars';
     
-map.getView().fit([365396.934833, 4902248.907372, 2373572.433127, 6641511.583824], map.getSize());
+map.getView().fit([-792561.593391, 5056477.736913, 1247335.378740, 6684466.515497], map.getSize());
 
 var NO_POPUP = 0
 var ALL_FIELDS = 1
