@@ -12,7 +12,7 @@ th, td {
 }
 
 td {
-    width: 300px;
+    width: 300px !important;
 }
 
 #map {
