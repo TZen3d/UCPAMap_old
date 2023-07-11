@@ -8,8 +8,7 @@ html, body {
 
 th, td {
     vertical-align: top;
-    text-align: left;
-    width: 300px !important
+    text-align: left;   
 }
 
 #map {
@@ -77,4 +76,8 @@ th, td {
 
 #popup-content li {
     margin-bottom:0.25em;
+}
+
+.popupImage {
+    max-width: 300px!important;
 }
