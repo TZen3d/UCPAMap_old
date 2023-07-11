@@ -77,3 +77,11 @@ th, td {
 #popup-content li {
     margin-bottom:0.25em;
 }
+
+.popup-content > table img {
+width: 300px;
+}
+
+.popup-content > img { /*for other leaflet maps you can add rule as well*/
+width: 300px;
+}
