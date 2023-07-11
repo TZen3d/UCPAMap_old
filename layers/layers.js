@@ -46,7 +46,7 @@ lyr_OpenStreetMap_0.setVisible(false);lyr_GoogleMaps_1.setVisible(true);lyr_Site
 var layersList = [lyr_OpenStreetMap_0,lyr_GoogleMaps_1,lyr_SitesUCPA_2];
 lyr_SitesUCPA_2.set('fieldAliases', {'Site': 'Site', 'webpage': 'webpage', 'Image': 'Image', });
 lyr_SitesUCPA_2.set('fieldImages', {'Site': 'TextEdit', 'webpage': 'TextEdit', 'Image': 'ExternalResource', });
-lyr_SitesUCPA_2.set('fieldLabels', {'Site': 'header label', 'webpage': 'inline label', 'Image': 'no label', });
+lyr_SitesUCPA_2.set('fieldLabels', {'Site': 'no label', 'webpage': 'no label', 'Image': 'no label', });
 lyr_SitesUCPA_2.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
