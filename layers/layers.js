@@ -30,10 +30,13 @@ var features_SitesUCPA_2 = format_SitesUCPA_2.readFeatures(json_SitesUCPA_2,
 var jsonSource_SitesUCPA_2 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_SitesUCPA_2.addFeatures(features_SitesUCPA_2);
+jsonSource_SitesUCPA_2.addFeatures(features_SitesUCPA_2);cluster_SitesUCPA_2 = new ol.source.Cluster({
+  distance: 10,
+  source: jsonSource_SitesUCPA_2
+});
 var lyr_SitesUCPA_2 = new ol.layer.Vector({
                 declutter: true,
-                source:jsonSource_SitesUCPA_2, 
+                source:cluster_SitesUCPA_2, 
                 style: style_SitesUCPA_2,
                 interactive: true,
                 title: '<img src="styles/legend/SitesUCPA_2.png" /> SitesUCPA'
@@ -41,9 +44,9 @@ var lyr_SitesUCPA_2 = new ol.layer.Vector({
 
 lyr_OpenStreetMap_0.setVisible(false);lyr_GoogleMaps_1.setVisible(true);lyr_SitesUCPA_2.setVisible(true);
 var layersList = [lyr_OpenStreetMap_0,lyr_GoogleMaps_1,lyr_SitesUCPA_2];
-lyr_SitesUCPA_2.set('fieldAliases', {'id': 'id', 'Site': 'Site', 'webpage': 'webpage', 'Image': 'Image', });
-lyr_SitesUCPA_2.set('fieldImages', {'id': 'TextEdit', 'Site': 'TextEdit', 'webpage': 'TextEdit', 'Image': 'ExternalResource', });
-lyr_SitesUCPA_2.set('fieldLabels', {'id': 'no label', 'Site': 'header label', 'webpage': 'no label', 'Image': 'no label', });
+lyr_SitesUCPA_2.set('fieldAliases', {'Site': 'Site', 'webpage': 'webpage', 'Image': 'Image', });
+lyr_SitesUCPA_2.set('fieldImages', {'Site': 'TextEdit', 'webpage': 'TextEdit', 'Image': 'ExternalResource', });
+lyr_SitesUCPA_2.set('fieldLabels', {'Site': 'header label', 'webpage': 'inline label', 'Image': 'no label', });
 lyr_SitesUCPA_2.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
