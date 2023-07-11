@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_SitesUCPA_2 = function(feature, resolution){
+var style_SitesUCPA_1 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
