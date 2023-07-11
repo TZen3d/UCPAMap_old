@@ -9,10 +9,7 @@ html, body {
 th, td {
     vertical-align: top;
     text-align: left;
-}
-
-td {
-    width: 300px !important;
+    width: 300px !important
 }
 
 #map {
