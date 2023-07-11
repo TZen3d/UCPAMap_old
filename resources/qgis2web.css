@@ -11,6 +11,10 @@ th, td {
     text-align: left;
 }
 
+td {
+    width: 300px;
+}
+
 #map {
     width: 100%;
     height: 100%;
@@ -76,12 +80,4 @@ th, td {
 
 #popup-content li {
     margin-bottom:0.25em;
-}
-
-.popup-content > table img {
-    width: 10px;
-}
-
-.popup-content > img {
-    width: 10px;
 }
