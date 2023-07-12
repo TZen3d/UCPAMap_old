@@ -31,21 +31,10 @@ var map = new ol.Map({
     })
 });
 
+var layerSwitcher = new ol.control.LayerSwitcher({tipLabel: "Layers"});
+map.addControl(layerSwitcher);
 
-    var searchLayer = new SearchLayer({
-      layer: lyr_SitesUCPA_1,
-      colName: 'Site',
-      zoom: 10,
-      collapsed: true,
-      map: map
-    });
-
-    map.addControl(searchLayer);
-    document.getElementsByClassName('search-layer')[0]
-    .getElementsByTagName('button')[0].className +=
-    ' fa fa-binoculars';
-    
-map.getView().fit([-753271.582517, 5050974.116846, 1284340.004062, 6673730.375732], map.getSize());
+map.getView().fit([-1096121.046371, 4850907.939225, 1760107.739022, 7068061.051562], map.getSize());
 
 var NO_POPUP = 0
 var ALL_FIELDS = 1
