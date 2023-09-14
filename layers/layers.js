@@ -31,7 +31,7 @@ var jsonSource_SitesUCPA_2 = new ol.source.Vector({
     attributions: ' ',
 });
 jsonSource_SitesUCPA_2.addFeatures(features_SitesUCPA_2);cluster_SitesUCPA_2 = new ol.source.Cluster({
-  distance: 100,
+  distance: 10,
   source: jsonSource_SitesUCPA_2
 });
 var lyr_SitesUCPA_2 = new ol.layer.Vector({
